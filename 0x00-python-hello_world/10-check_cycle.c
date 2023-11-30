@@ -19,11 +19,11 @@ int check_cycle(listint_t *list)
 
         if (slow == fast)
         {
-            // Cycle detected
+            /*Cycle detected*/
             return 1;
         }
     }
 
-    // No cycle detected
+    /*No cycle detected*/
     return 0;
 }
