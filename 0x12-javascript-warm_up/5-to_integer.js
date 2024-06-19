@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const arg  = process.argv[2];
+const arg = process.argv[2];
 const intValue = parseInt(arg);
 
 if (isNaN(intValue)) {
@@ -7,4 +7,3 @@ if (isNaN(intValue)) {
 } else if (!isNaN(intValue)) {
   console.log('My number: ' + intValue);
 }
-//  else { console.log('undefined is undefined'); }
