@@ -7,4 +7,4 @@ if (argsLength < 1) {
   console.log(args);
 }
 // argsLength < 1 ? 'No argument' : console.log(args);
-// console.log(args);
+console.log(argsLength);
