@@ -5,7 +5,7 @@ function sortingInput (...args) {
 
   if (args.length <= 1) {
     console.log(0);
-    return null;
+    return 0;
   } else {
     const sortedArray = args.sort((a, b) => b - a);
     return sortedArray;
