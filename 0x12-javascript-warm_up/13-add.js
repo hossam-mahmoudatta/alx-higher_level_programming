@@ -11,10 +11,18 @@
 
   console.log(add(3, 5));
 */
+
+// version 1
+// exports.add = function (a, b) {
+//   return (a + b);
+// };
+
+// version 2
 // export function add (a, b) {
 //   return (a + b);
 // }
 
+// version 3
 module.exports = {
   add (a, b) {
     return (a + b);
