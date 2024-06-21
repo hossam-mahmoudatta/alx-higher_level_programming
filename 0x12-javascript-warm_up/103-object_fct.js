@@ -13,6 +13,9 @@ myObject.incr = function () {
   myObject.value++;
 };
 
+// The inline version for the function above is
+// myObject.incr = () => { myObject.value++; };
+
 myObject.incr();
 console.log(myObject);
 myObject.incr();
