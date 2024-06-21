@@ -1,6 +1,16 @@
 #!/usr/bin/node
-if (process.argv[2]) {
-  console.log(process.argv[2]);
-} else {
-  console.log('No argument');
+
+class Rectangle {
+  constructor (w, h) {
+    if ((w > 0) && (h > 0)) {
+      this.width = w;
+      this.height = h;
+    }
+  }
+
+  print () {
+    return this.width * this.height;
+  }
 }
+
+module.exports = Rectangle;
