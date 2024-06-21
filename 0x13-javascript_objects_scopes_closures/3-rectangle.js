@@ -9,7 +9,16 @@ class Rectangle {
   }
 
   print () {
-    return this.width * this.height;
+    const selectedString = 'X';
+    let output = '';
+
+    for (let i = 0; i < this.height; i++) {
+      for (let j = 0; j < this.width; j++) {
+        output += selectedString;
+      }
+      console.log(output);
+      output = '';
+    }
   }
 }
 
