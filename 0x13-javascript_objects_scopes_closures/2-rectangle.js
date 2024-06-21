@@ -1,11 +1,12 @@
 #!/usr/bin/node
-const args = process.argv.slice(2);
-const argsLength = (
-  args.length < 1
-    ? 'No argument'
-    : args.length === 1
-      ? 'Argument found'
-      : 'Arguments found'
-);
-console.log(argsLength);
-// console.log(args);
+
+class Rectangle {
+  constructor (w, h) {
+    if (((w || h) === 0) || (isNaN(w)) || (isNaN(h))) {
+      this.width = w;
+      this.height = h;
+    }
+  }
+}
+
+module.exports = Rectangle;
