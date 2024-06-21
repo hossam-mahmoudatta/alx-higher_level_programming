@@ -1,6 +1,23 @@
 #!/usr/bin/node
-const arrayOfStrings = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-for (let i = 0; i < arrayOfStrings.length; i++) {
-  console.log(arrayOfStrings[i]);
+const Square = require('./5-square');
+
+class Square extends Rectangle {
+  charPrint(character) {
+    let output = '';
+
+    if (character = '') {
+      this.print();
+    } else {
+      for (let i = 0; i < size; i++) {
+        for (let j = 0; j < size; j++) {
+          output += character;
+        }
+        console.log(output);
+        output = '';
+      }
+    }
+  }
 }
+
+module.exports = Square;
