@@ -1,11 +1,16 @@
 #!/usr/bin/node
 
-const list = require('./100-data').list;
+const receivedDict = require('./101-data').dict;
 
-// Pass a function to map
-const modifiedList = list.map(function (value, index) {
-  return value * index;
-});
+const modifiedDict = {};
 
-console.log(list);
-console.log(modifiedList);
+for (const key in receivedDict) {
+  const value = receivedDict[key];
+
+  if (!modifiedDict[value]) {
+    modifiedDict[value] = [];
+  }
+  modifiedDict[value].push(key);
+}
+
+console.log(modifiedDict);
