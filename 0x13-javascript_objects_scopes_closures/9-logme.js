@@ -3,8 +3,8 @@
 let counter = 0;
 
 function logMe (item) {
-  counter++;
   console.log(counter + ': ' + item);
+  counter++;
 }
 
 module.exports = {
