@@ -1,11 +1,10 @@
 #!/usr/bin/node
 
-// I don't really understand this task
+const list = require('./100-data');
 
-// Dunno why this code didn't work...
-// const mainJS = require('./100-main.js');
-// mainJS.myVar = 333;
-// module.exports = mainJS;
+// Pass a function to map
+const map1 = list.map((value, index) => value * index);
 
-// What worked was this:
-myVar = 333;
+console.log(list);
+console.log(map1);
+// Expected output: Array [2, 8, 18, 32]
