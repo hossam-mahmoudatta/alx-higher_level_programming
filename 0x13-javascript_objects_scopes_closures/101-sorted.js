@@ -1,11 +1,11 @@
 #!/usr/bin/node
 
-// Don't understand this code either
+const list = require('./100-data').list;
 
-module.exports = {
-  callMeMoby (x, theFunction) {
-    for (let i = 0; i < x; i++) {
-      theFunction();
-    }
-  }
-};
+// Pass a function to map
+const modifiedList = list.map(function (value, index) {
+  return value * index;
+});
+
+console.log(list);
+console.log(modifiedList);
