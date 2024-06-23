@@ -2,12 +2,10 @@
 
 module.exports = {
   esrever (list) {
-    let reversedList;
-    let j = 0;
+    const reversedList = [];
 
-    for (let i = list.length - 1; i > 0; i--) {
-      reversedList[j] = list[i];
-      j++;
+    for (let i = list.length - 1; i >= 0; i--) {
+      reversedList.push(list[i]);
     }
     return (reversedList);
   }
