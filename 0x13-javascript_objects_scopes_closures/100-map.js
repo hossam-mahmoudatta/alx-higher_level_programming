@@ -3,7 +3,9 @@
 const list = require('./100-data').list;
 
 // Pass a function to map
-const map1 = list.map((value, index) => value * index);
+const modifiedList = list.map(function (value, index) {
+  return value * index;
+});
 
 console.log(list);
-console.log(map1);
+console.log(modifiedList);
