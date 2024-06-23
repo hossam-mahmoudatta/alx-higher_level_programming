@@ -1,13 +1,11 @@
 #!/usr/bin/node
 
-let counter = 0;
-
 function converter (base) {
-  console.log(counter + ': ' + item);
-  counter++;
+  return function (inputNumber) {
+    return inputNumber.toString(base);
+  };
 }
 
 module.exports = {
-  counter,
   converter
 };
