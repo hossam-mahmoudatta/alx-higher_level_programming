@@ -1,17 +1,13 @@
 #!/usr/bin/node
 
-function factorial (a) {
-  if (a === 0) {
-    return (1);
-  }
+let counter = 0;
 
-  return (factorial(a - 1) * a);
+function converter (base) {
+  console.log(counter + ': ' + item);
+  counter++;
 }
 
-const arg1 = parseInt(process.argv[2]);
-
-if (isNaN(arg1)) {
-  console.log(factorial(0));
-} else if (!isNaN(arg1)) {
-  console.log(factorial(arg1));
-}
+module.exports = {
+  counter,
+  converter
+};
