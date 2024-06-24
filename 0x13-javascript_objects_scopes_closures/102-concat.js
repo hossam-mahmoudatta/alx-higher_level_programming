@@ -1,9 +1,10 @@
 #!/usr/bin/node
 
-// Don't understand this code either
+// We'll use the fs functions, that are related to files
+const fileSystem = require('fs');
+let combinedString = '';
 
-module.exports = {
-  addMeMaybe (number, theFunction) {
-    theFunction(++number);
-  }
-};
+combinedString = combinedString.concat(fileSystem.readFileSync(process.argv[2]));
+combinedString = combinedString.concat(fileSystem.readFileSync(process.argv[3]));
+
+fileSystem.writeFileSync(process.argv[4], combinedString);
